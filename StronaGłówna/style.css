@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-align: center;
+font-size: 20px;
+}
+body{
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 8vh;
+    line-height: 8vh;
+    background-color: royalblue;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    width: 22.5%;
+    transition: 1s;
+} 
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #aaa;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section{
+    border: 2px solid black;
+    width: 100%;
+}
+img{
+    width: 30vh;
+    height: 30vh;
+}
+.text {
+    width: 100%;
+    float: right;
+    }
+    @media(min-width:420px) and (orientation:portrait){
+        section{
+            width: 70%;
+        }
+    }
+    
+    @media(min-width:420px) and (orientation:landscape){
+        section{
+            height: 100vh;
+            width: 50%;
+        }
+        img{
+            width: 50vh;
+            height: 50vh;
+        }
+    }
+    @media(min-width:900px) and (orientation:landscape){
+        section{
+            width: 43%;
+        }
+    }
+    @media(min-width:1080px) and (orientation:landscape){
+        section{
+            width: 45%;
+        }
+    }
+
+    @media(min-width:1080px) and (orientation:landscape){
+        section{
+            width: 45%;
+        }
+    }
+    @media(min-height:300px) and (orientation:landscape){
+        .img{
+            margin-bottom: 10vh;
+        }
+    }
+    @media(min-height:500px) and (orientation:landscape){
+        .text{
+            font-size: 25px;
+        }
+    }
+    @media(min-height:600px) and (orientation:landscape){
+        .text{
+            font-size: 28px;
+        }
+    }
